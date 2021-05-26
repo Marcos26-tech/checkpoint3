@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu {
+    background-color: #3d9db3;
+}
+  
+.menu ul {
+    text-align: center;
+}
+  
+.menu ul li {
+    display: inline-block;
+}
+  
+.menu ul li a {
+    padding: 2vh;
+    text-transform:uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+  
