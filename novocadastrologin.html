@@ -19,6 +19,44 @@
                 </ul>
             </nav>
         </div>
+        <div class="box">
+            <h1>Cadastro</h1>
+            <hr/>
+            <form action="#" method="POST">
+                <div>
+                    <label for="idUser">Seu nome : </label>
+                    <input type="text" name="user" id="idUser" placeholder="Nome"
+                    class="campo" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$"> 
+                   
+                </div>
+                <div>
+                    <label for="idEmailc">Seu e-mail : </label>
+                    <input type="email" name="emailc" id="idEmailc" placeholder="E-mail"
+                    class="campo" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$"> 
+                   
+                </div>
+                <div>
+                    <label for="idPassc">Sua Senha :</label>
+                    <input type="password" name="passc" id="idPassc" placeholder="Senha" 
+                    class="campo" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{8,}$">
+                </div>
+                <div>
+                    <input type="submit" name="cd" id="idCadastro" value="Cadastrar" class="btn">
+                </div>
+            </form>
+            <div class="rodape">
+                <form action="novocadastrologin.html" method="GET">
+                    <label for="idLogin">Já tem conta?</label>
+                    <input type="button" name="lg" id="idLogin" value="Ir para Login" class="btnRodape">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
