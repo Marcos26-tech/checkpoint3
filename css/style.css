@@ -3,9 +3,29 @@ body{
     padding: 0;
 }
 
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    margin: 1vh;
+}
+
+hr{
+    background: linear-gradient(10deg, transparent, rgb(61, 157, 179), transparent );
+    width: 100%;
+    height: 2px;
+    border: none;
+}
+
+h1{
+    text-align: center;
+    color: #3d9db3;
+    font-weight: bold;
+}
 
 .menu {
-    background-color: #3d9db3;
+    background-color: rgb(61, 157, 179);
 }
   
 .menu ul {
@@ -24,4 +44,44 @@ body{
     display: block;
     font-weight: bold;
 }
-  
+
+.select{
+    background-color: #333 ;
+}
+
+.box{
+    width: 55vh;
+    margin: auto;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #3d9db3;
+    border-radius: 10px;
+    padding: 3vh;
+}
+
+.campo{
+    display: block;
+    padding: 1vh;
+    width: 50vh;
+}
+
+.btn{
+    padding: 1vh;
+    width: 100%;
+    font-size: 2vh;
+    background-color: #3d9db3;
+    border: none;
+    color: #fff;
+}
+
+.rodape{
+    text-align: right;
+    color: #333;
+    background-color: rgb(224 233 234);
+}
+
+.btnRodape{
+    border: 1px solid #cbd518 ;
+    color: #3d9db3;
+}
