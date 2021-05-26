@@ -58,7 +58,8 @@ h1, h2{
     flex-direction: column;
     border: 1px solid #3d9db3;
     border-radius: 10px;
-    padding: 3vh;
+    padding: 1%;
+    padding-bottom: 0%;
 }
 
 .box2{
@@ -78,8 +79,8 @@ h1, h2{
 }
 
 .btn{
-    padding: 1vh;
-    width: 100%;
+    padding: 1%;
+    width: 103.1%;
     font-size: 2vh;
     background-color: #3d9db3;
     border: none;
@@ -90,11 +91,24 @@ h1, h2{
     text-align: right;
     color: #333;
     background-color: rgb(224 233 234);
+    padding-block-end: 5%;
+    padding-block-start: 5%;
+    width: 100%;
+    margin: 0%;
+    margin-top: 3%;
+    background-size: cover;
+    padding-right: 3.33%;
+    border-bottom-left-radius: 1ex;
+    border-bottom-right-radius: 1ex;
+    margin-inline-start: 0;
+    
 }
 
 .btnRodape{
     border: 1px solid #cbd518 ;
     color: #3d9db3;
+    padding: 1%;
+
 }
 
 .comentario{
@@ -110,6 +124,7 @@ h1, h2{
     background-color: #f7f7f7;
     max-height: 58vh;
     margin: auto;
+    display:grid;
 }
 
 img{
