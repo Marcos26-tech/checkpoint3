@@ -19,7 +19,7 @@ hr{
     margin-bottom: 3vh;
 }
 
-h1{
+h1, h2{
     text-align: center;
     color: #3d9db3;
     font-weight: bold;
@@ -61,6 +61,16 @@ h1{
     padding: 3vh;
 }
 
+.box2{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: #f7f7f7;
+    border: 1px solid #3d9db3;
+    height: 58vh;
+    border-radius: 10px;
+}
+
 .campo{
     display: block;
     padding: 1vh;
@@ -89,4 +99,20 @@ h1{
 
 .comentario{
     height: 15vh;
+}
+
+.card{
+    border: 2px solid #3d9db3;
+    padding: 1vh;
+    text-align: center;
+    border-radius: 20px;
+    width: 22vh;
+    background-color: #fff;
+    max-height: 58vh;
+    margin: auto;
+}
+
+img{
+    width: 21vh;
+    border-radius: 10px;
 }
