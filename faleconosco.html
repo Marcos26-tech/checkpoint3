@@ -19,6 +19,52 @@
                 </ul>
             </nav>
         </div>
+        <div class="box">
+            <h1>Fale Conosco</h1>
+            <hr/>
+            <form action="#" method="POST">
+                <div>
+                    <label for="idAssunto">Assunto : </label>
+                    <input type="text" name="Ass" id="idAssunto" placeholder="Assunto"
+                    class="campo" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$"> 
+                   
+                </div>
+                <div>
+                    <label for="idUserf">Nome : </label>
+                    <input type="text" name="userf" id="idUserf" placeholder="Nome"
+                    class="campo" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$"> 
+                   
+                </div>
+                <div>
+                    <label for="idEmailf">E-mail : </label>
+                    <input type="email" name="emailf" id="idEmailf" placeholder="E-mail"
+                    class="campo" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$"> 
+                   
+                </div>
+                <div>
+                    <label for="idComentario">Comentário :</label>
+                    <input type="text" name="coment" id="idComentario" placeholder="Comentário" 
+                    class="campo comentario" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{8,}$">
+                </div>
+                <div>
+                    <input type="submit" name="ct" id="idComent" value="Enviar" class="btn">
+                </div>
+            </form>
+            <div class="rodape">
+                <form action="novocadastrologin.html" method="GET">
+                    <label for="idLogin">Ainda não tem conta?</label>
+                    <a href="./novocadastrologin.html"><input type="button" name="cd" id="idCadastro" value="Cadastrar-se" class="btnRodape"></a>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
