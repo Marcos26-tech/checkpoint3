@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="uft-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <title>Novo Cadastro</title>
 
 </head>
+
 <body>
     <div class="container">
         <div class="menu">
             <nav>
                 <ul>
-                   <li><a href="index.html">Login</a></li>
-                   <li class="select"><a href="novocadastrologin.html">Cadastro</a></li>
-                   <li><a href="portal.html">Portal</a></li>
-                   <li><a href="faleconosco.html">Fale Conosco</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <li class="select"><a href="novocadastrologin.html">Cadastro</a></li>
+                    <li><a href="portal.html">Portal</a></li>
+                    <li><a href="faleconosco.html">Fale Conosco</a></li>
                 </ul>
             </nav>
         </div>
         <div class="box">
             <h1>Cadastro</h1>
-            <hr/>
+            <hr />
             <form action="portal.html" method="POST">
                 <div>
                     <label for="idUser">Seu nome : </label>
-                    <input type="text" name="user" id="idUser" placeholder="Nome"
-                    class="campo" required
-                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$"> 
-                   
+                    <input type="text" name="user" id="idUser" placeholder="Nome" class="campo" required
+                        oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
+
                 </div>
                 <div>
                     <label for="idEmail">Seu e-mail : </label>
-                    <input type="email" name="email" id="idEmail" placeholder="E-mail"
-                    class="campo" required
-                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$"> 
-                   
+                    <input type="email" name="email" id="idEmail" placeholder="E-mail" class="campo" required
+                        oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
+
                 </div>
                 <div>
                     <label for="idPass">Sua Senha :</label>
-                    <input type="password" name="pass" id="idPass" placeholder="Senha" 
-                    class="campo" required
-                    oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{8,}$">
+                    <input type="password" name="pass" id="idPass" placeholder="Senha" class="campo" required
+                        oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{8,}$">
                 </div>
                 <div>
                     <input type="submit" name="cd" id="idCadastro" value="Cadastrar" class="btn">
@@ -54,10 +53,12 @@
             <div class="rodape">
                 <form action="novocadastrologin.html" method="GET">
                     <label for="idLogin">Já tem conta?</label>
-                    <a href="./index.html"><input type="button" name="lg" id="idLogin" value="Ir para Login" class="btnRodape"></a>
+                    <a href="./index.html"><input type="button" name="lg" id="idLogin" value="Ir para Login"
+                            class="btnRodape"></a>
                 </form>
             </div>
         </div>
     </div>
 </body>
+
 </html>
