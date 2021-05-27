@@ -26,32 +26,32 @@
         <div class="box">
             <h1>Login</h1>
             <hr />
-            <form action="portal.html" method="POST">
-                <div>
-                    <label for="idEmail">Seu e-mail : </label>
-                    <input type="email" name="email" id="idEmail" placeholder="contado@email.com" class="campo" required
-                        oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
+            <div class="pdd">
+                <form action="portal.html" method="POST">
+                    <div>
+                        <label for="idEmail">Seu e-mail : </label>
+                        <input type="email" name="Email" id="idEmail" placeholder="contado@email.com" class="campo" required
+                            pattern="[0-9]-[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{10,}$">
 
-                </div>
-                <div>
-                    <label for="idPass">Sua Senha :</label>
-                    <input type="password" name="pass" id="idPass" placeholder="Senha" class="campo" required
-                        oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{8,}$">
-                </div>
-                <div>
-                    <input type="checkbox" name="ManLog" id="idManLog">
-                    <label for="idManLog">Manter-me Logado</label>
-                </div>
-                <div>
-                    <input type="submit" name="lg" id="idLogin" value="Logar" class="btn">
-                </div>
-            </form>
+                    </div>
+                    <div>
+                        <label for="idPass">Sua Senha :</label>
+                        <input type="password" name="pass" id="idPass" placeholder="Senha" class="campo" required
+                            pattern="[0-9]-[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{8,}$">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ManLog" id="idManLog">
+                        <label for="idManLog">Manter-me Logado</label>
+                    </div>
+                    <div>
+                        <input type="submit" name="lg" id="idLogin" value="Logar" class="btn">
+                    </div>
+                </form>
+            </div>
             <div class="rodape">
                 <form action="novocadastrologin.html" method="GET">
                     <label for="idCadastro">Ainda não tem conta?</label>
-                    <input type="button" name="cdt" id="idCadastro"
+                    <input type="submit" name="cdt" id="idCadastro"
                             value="Cadastre-se" class="btnRodape">
                 </form>
             </div>
