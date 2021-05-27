@@ -28,25 +28,26 @@ function customValidation(event) {
         field.addEventListener("invalid", customValidation)
     }
 
+/*login*/
 
+    var arquivoEmails = ["marcosmaciel@fiap.com.br", "ma@fiap.com.br", "marcos@fiap.com.br"];
+    var senhas = ["rm88267", "rm822665", "rm52565"];
 
-    let arquivoEmails = ["marcosmaciel@fiap.com.br", "ma@fiap.com.br", "marcos@fiap.com.br"];
-    let senhas = [" rm88267", "rm822665", "rm52565"];
-
-    function login() {
-        var username = document.login.Email.value;
-        username = Email.toLowerCase();
-        var password = document.login.pass.value;
-        password = pass.toLowerCase();
-        for (var cont = 0; cont < arquivoEmails.length; cont++)
-            if (username == "arquivoEmails[cont]" && password == "senhas[cont]") {
-                window.location = "../portal.html";
-                done = 1;
-
+    ValidaLogin = function (){
+        var login = document.getElementsByTagName("login");
+        var username = login.Email;
+        var password = login.pass;
+        password = password.toLowerCase();
+        for ([cont = 0]; [cont < arquivoEmails.length]; [cont++]){
+            if ((username == arquivoEmails[cont]) && (password == senhas[cont])) {
+                window.location.href = "../portal.html" ;
             }
-    }
+            else {
+                alert("Login invalido")
+            }
+        }
 
-}
+    }
 
 var arrayPessoas = []
 if (JSON.parse(localStorage.getItem("pessoas")) != null) {
