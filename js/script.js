@@ -25,7 +25,7 @@ function login(e) {
     let txtidPass = document.getElementById("idPass")
     for (i = 0; i < 5; i++) {
         if (txtemail.value == email[i] && txtidPass.value == senha[i]) {
-            window.location.href = "../portal.html"
+            window.location.href = "./portal.html"
             return
         }
     }
