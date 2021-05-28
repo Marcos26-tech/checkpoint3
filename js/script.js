@@ -1,5 +1,5 @@
 //scrpt para verificar tds os seletores//
-const fields = document.querySelectorAll("[input]")
+/*const fields = document.querySelectorAll("[input]")
 
 console.log(fields)
 
@@ -29,25 +29,27 @@ function customValidation(event) {
     }
 
 /*login*/
+var usuarios = [
+    "batata@gmail.com", "nuvem@gmail.com" , "cores@gmail.com"
+];
+var senhas= [
+    "123456" , "abacaxi" , "654321"
+];
 
-    var arquivoEmails = ["marcosmaciel@fiap.com.br", "ma@fiap.com.br", "marcos@fiap.com.br"];
-    var senhas = ["rm88267", "rm822665", "rm52565"];
+function validar() {
+    var usuario = document.getElementById("idEmail").value;
+    var senha = document.getElementById("idPass").value;
 
-    ValidaLogin = function (){
-        var login = document.getElementsByTagName("login");
-        var username = login.Email;
-        var password = login.pass;
-        password = password.toLowerCase();
-        for ([cont = 0]; [cont < arquivoEmails.length]; [cont++]){
-            if ((username == arquivoEmails[cont]) && (password == senhas[cont])) {
-                window.location.href = "../portal.html" ;
-            }
-            else {
-                alert("Login invalido")
-            }
+    for (var i in usuarios) {
+        var us = usuarios[i];
+        if (usuarios[i] == usuario && senhas[i] == senha) {
+            return true;
         }
-
     }
+    alert("Dados incorretos, tente novamente.");
+    return false;
+}
+/*fim login*/
 
 var arrayPessoas = []
 if (JSON.parse(localStorage.getItem("pessoas")) != null) {
@@ -72,5 +74,3 @@ console.log(pessoa);
 arrayPessoas.push(pessoa);
 var pessoaJson = JSON.stringify(arrayPessoas);
 localStorage.setItem("pessoas", pessoaJson);
-
-alert("Salvo com Sucesso");

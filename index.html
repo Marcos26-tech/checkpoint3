@@ -25,12 +25,13 @@
         </div>
         <div class="box">
             <h1>Login</h1>
-            <hr />
+            <hr>
             <div class="pdd">
-                <form action="#" method="get" name="login"> <!--sabemos que deve ser usado post para o envio desse formulario -->
+                <form action="portal.html" method="POST"> <!--sabemos que deve ser usado post para o envio desse formulario -->
                     <div class="input">
                         <label for="idEmail">Seu e-mail : </label>
-                        <input type="email" name="Email" id="idEmail" placeholder="contado@email.com" class="campo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                        <input type="email" name="Email" id="idEmail" placeholder="contado@email.com" class="campo" required 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
                         <span class="error"></span>
                                
                     </div>
@@ -46,7 +47,7 @@
                         <label for="idManLog">Manter-me Logado</label>
                     </div>
                     <div>
-                        <input type="button" onclick="ValidaLogin()" name="lg" id="idLogin" value="Logar" class="btn">
+                        <input type="submit" onclick="return validar()" name="lg" id="idLogin" value="Logar" class="btn">
                     </div>
                 </form>
             </div>
