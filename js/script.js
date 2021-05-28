@@ -13,7 +13,7 @@ function validaForm(frm) {
 
 //função de verificar se o email e senha informados são validos//
 let email = ["marcos@fiap.com.br", "marcosvinicius@fiap.com.br", "vitoria@fiap.com", "jonathan@fiap.com", "luan@fiap.com"]
-let senha = ["rm88267", "rm86904", "rm8077", "rm88082", "rm89352"]
+let senha = ["rm88267", "rm86904", "rm88077", "rm88082", "rm89352"]
 
 let button = document.getElementById("idLogin")
 button.addEventListener("click",login)
