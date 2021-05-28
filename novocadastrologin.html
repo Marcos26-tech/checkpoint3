@@ -29,23 +29,24 @@
             <form action="portal.html" method="POST">
                 <div>
                     <label for="idUser">Seu nome : </label>
-                    <input type="text" name="user" id="idUser" placeholder="Nome" class="campo" 
+                    <input type="text" name="user" id="idUser" placeholder="Nome" class="campo" required
                         pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
 
                 </div>
                 <div>
                     <label for="idEmail">Seu e-mail : </label>
-                    <input type="email" name="Email" id="idEmail" placeholder="contado@email.com" class="campo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <input type="email" name="email" id="idEmail" placeholder="contado@email.com" class="campo" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     
 
                 </div>
                 <div>
                     <label for="idPass">Sua Senha :</label>
-                    <input type="password" name="pass" id="idPass" placeholder="Senha" class="campo" pattern=".{6,}">
+                    <input type="password" name="Pass" id="idPass" placeholder="Senha" class="campo" required pattern=".{6,}">
                         
                 </div>
                 <div>
-                    <input type="submit" name="cd" id="idCadastro" value="Cadastrar" class="btn">
+                    <input type="submit" onclick="cadastro()" name="cd" id="idCadastro" value="Cadastrar" class="btn">
                 </div>
             </form>
             </div>

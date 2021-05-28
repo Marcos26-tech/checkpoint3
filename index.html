@@ -27,35 +27,33 @@
             <h1>Login</h1>
             <hr>
             <div class="pdd">
-                <form action="portal.html" method="POST"> <!--sabemos que deve ser usado post para o envio desse formulario -->
+
+                <form name="frm" action="portal.html" method="POST">
+                    <!--sabemos que deve ser usado post para o envio desse formulario -->
                     <div class="input">
                         <label for="idEmail">Seu e-mail : </label>
-                        <input type="email" name="Email" id="idEmail" placeholder="contado@email.com" class="campo" required 
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                        <input type="email" name="Email" id="idEmail" placeholder="contado@email.com" class="campo"
+                            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                         <span class="error"></span>
-                               
                     </div>
                     <div class="input">
                         <label for="idPass">Sua Senha :</label>
-                        <input type="password" name="pass" id="idPass" placeholder="Senha" class="campo" required
-                        pattern=".{6,}">
-                        
-                        <span class="error"></span>    
+                        <input type="password" name="pass" id="idPass" placeholder="Senha" class="campo" required>
+                        <span class="error"></span>
                     </div>
                     <div>
                         <input type="checkbox" name="ManLog" id="idManLog">
                         <label for="idManLog">Manter-me Logado</label>
                     </div>
                     <div>
-                        <input type="submit" onclick="return validar()" name="lg" id="idLogin" value="Logar" class="btn">
+                        <input type="submit" name="lg" id="idLogin" value="Logar" class="btn">
                     </div>
                 </form>
             </div>
             <div class="rodape">
                 <form action="novocadastrologin.html" method="get">
                     <label for="idCadastro">Ainda não tem conta?</label>
-                    <input type="submit" name="cdt" id="idCadastro"
-                            value="Cadastre-se" class="btnRodape">
+                    <input type="submit" name="cdt" id="idCadastro" value="Cadastre-se" class="btnRodape">
                 </form>
             </div>
         </div>
