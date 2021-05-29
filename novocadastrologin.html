@@ -26,7 +26,7 @@
             <h1>Cadastro</h1>
             <hr />
             <div class="pdd">
-            <form action="portal.html" method="POST">
+            <form action="portal.html" method="GET">
                 <div>
                     <label for="idUser">Seu nome : </label>
                     <input type="text" name="user" id="idUser" placeholder="Nome" class="campo" required
@@ -35,18 +35,14 @@
                 </div>
                 <div>
                     <label for="idEmail">Seu e-mail : </label>
-                    <input type="email" name="email" id="idEmail" placeholder="contado@email.com" class="campo" required
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    
-
+                    <input type="email" name="email" id="idEmail" placeholder="contado@email.com" class="campo" required>
                 </div>
                 <div>
                     <label for="idPass">Sua Senha :</label>
                     <input type="password" name="Pass" id="idPass" placeholder="Senha" class="campo" required pattern=".{6,}">
-                        
                 </div>
                 <div>
-                    <input type="submit" onclick="cadastro()" name="cd" id="idCadastro" value="Cadastrar" class="btn">
+                    <input type="submit"  name="cd" id="idCadastro" value="Cadastrar" class="btn">
                 </div>
             </form>
             </div>
