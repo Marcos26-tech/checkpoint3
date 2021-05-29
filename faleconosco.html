@@ -25,38 +25,29 @@
             <h1>Fale Conosco</h1>
             <hr />
             <div class="pdd">
-            <form action="portal.html" method="POST">
-                <div>
-                    <label for="idAssunto">Assunto : </label>
-                    <input type="text" name="Ass" id="idAssunto" placeholder="Assunto" class="campo" required
-                        oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
-
-                </div>
-                <div>
-                    <label for="idUserf">Nome : </label>
-                    <input type="text" name="userf" id="idUserf" placeholder="Nome" class="campo" required
-                        oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
-
-                </div>
-                <div>
-                    <label for="idEmailf">E-mail : </label>
-                    <input type="email" name="emailf" id="idEmailf" placeholder="contado@email.com" class="campo"
-                        required oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
-
-                </div>
-                <div>
-                    <label for="idComentario">Comentário :</label>
-                    <input type="text" name="coment" id="idComentario" class="campo comentario" required
-                        oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
-                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{8,}$">
-                </div>
-                <div>
-                    <input type="submit" name="ct" id="idComent" value="Enviar" class="btn" onclick="validardados()">
-                </div>
-            </form>
+                <form action="portal.html" method="POST">
+                    <div>
+                        <label for="idAssunto">Assunto : </label>
+                        <input type="text" name="Ass" id="idAssunto" placeholder="Assunto" class="campo" required>
+                    </div>
+                    <div>
+                        <label for="idUserf">Nome : </label>
+                        <input type="text" name="userf" id="idUserf" placeholder="Nome" class="campo" required>
+                    </div>
+                    <div>
+                        <label for="idEmailf">E-mail : </label>
+                        <input type="email" name="emailf" id="idEmailf" placeholder="contado@email.com" class="campo"
+                            required>
+                    </div>
+                    <div>
+                        <label for="idComentario">Comentário :</label>
+                        <input type="text" name="coment" id="idComentario" class="campo comentario" required>
+                    </div>
+                    <div>
+                        <input type="submit" name="ct" id="idComent" value="Enviar" class="btn"
+                            onclick="validardados()">
+                    </div>
+                </form>
             </div>
             <div class="rodape">
                 <form action="novocadastrologin.html" method="GET">

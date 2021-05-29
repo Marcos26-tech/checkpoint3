@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" defer ></script>
     <title>Novo Cadastro</title>
 
 </head>
@@ -26,12 +26,10 @@
             <h1>Cadastro</h1>
             <hr />
             <div class="pdd">
-            <form action="portal.html" method="GET">
+            <form action="./portal.html" method="GET">
                 <div>
                     <label for="idUser">Seu nome : </label>
-                    <input type="text" name="user" id="idUser" placeholder="Nome" class="campo" required
-                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
-
+                    <input type="text" name="user" id="idUser" placeholder="Nome" class="campo" required>
                 </div>
                 <div>
                     <label for="idEmail">Seu e-mail : </label>
@@ -42,7 +40,7 @@
                     <input type="password" name="Pass" id="idPass" placeholder="Senha" class="campo" required pattern=".{6,}">
                 </div>
                 <div>
-                    <input type="submit"  name="cd" id="idCadastro" value="Cadastrar" class="btn">
+                    <input type="submit"  name="cd" id="idCadastro" value="Cadastrar" class="btn" onclick="cadastro">
                 </div>
             </form>
             </div>
